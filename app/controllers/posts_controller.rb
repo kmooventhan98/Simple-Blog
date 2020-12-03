@@ -13,7 +13,6 @@ class PostsController < ApplicationController
 	end
 
 	def create
-		#render plain: params[:post].inspect
 		@post=Post.new(post_params)
 		
 		if(@post.save)
